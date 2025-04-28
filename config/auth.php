@@ -40,15 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-    ],
-
-    'guards' => [
-    'api' => [
-        'driver' => 'sanctum',
+  
+     'api' => [
+        'driver' => 'passport', // Change from sanctum or token to passport
         'provider' => 'users',
-        ],
     ],
-
+  ],
     /*
     |--------------------------------------------------------------------------
     | User Providers

@@ -54,6 +54,14 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+
+    'providers' => [
+            // Other Service Providers...
+
+            App\Providers\AuthServiceProvider::class,
+        ],
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
